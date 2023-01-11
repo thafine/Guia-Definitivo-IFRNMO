@@ -1,0 +1,104 @@
+html {
+    overflow-y:hidden;
+}
+
+body {
+    display: flex;
+    width: 100vw;
+    height: 100vh;
+    background-color: var(--cor-back);
+    background-size: cover;
+    justify-content: center;
+    align-items: center;
+}
+
+main {
+    background-color: var(--cor-back);
+    background-image: url(../assets/img/ifrnmo.png);
+    background-position: center;
+    background-size: 100vw;
+    padding: 10% 20%;
+
+}
+
+article {
+    display: flex;
+    background-color: #FFF;
+    border-radius: 20px;
+    box-shadow: 2px 3px 3px 2px #00000040;
+    padding: 4em;
+}
+
+div {
+    display: inline-block;
+    width: 50%;
+}
+
+.guia{
+    display: inline;
+    background-color: transparent;
+}
+
+.guia > h1 {
+    color: var(--cor-destaque);
+    font: bold 4.5em 'Cocogoose', serif;
+    letter-spacing: 2px;
+}
+
+.btn {
+    display: block;
+    color: #000;
+    font: bold 15px 'Questrial';
+    text-decoration: none;
+    text-align: center;
+    letter-spacing: 0;
+    background-color: #FFF;
+    border-radius: 30px;
+    box-shadow: 0px 3px 2px #00000040;
+    padding: 15px;
+    margin-bottom: 40px;
+}
+    .btn:hover {
+        color: #FFF;
+        background-color: #810E09;
+        transition: 0.2s;
+    }
+
+.brand-title {
+    display: none;
+}
+
+
+@media (max-width: 1230px) {
+    main {
+        background-image: none;
+    }
+
+    img {
+        display: none;
+    }
+
+    article {
+        display: block;
+    }
+
+    .guia {
+        display: none;
+    }
+
+    div {
+        width: 100%;
+    }
+    
+    .brand-title {
+        display: block;
+        font-size: 1.45em;
+        text-align: center;
+    }
+}
+
+@media (max-width: 600px) {
+    a.btn {
+        font-size: 13px;
+    }
+}
